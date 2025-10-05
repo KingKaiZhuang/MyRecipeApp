@@ -20,7 +20,7 @@ class MainViewModel : ViewModel() {
             try {
                 val response = recipeService.getCategories()
                 _categorieState.value = _categorieState.value.copy(
-                    list = response.category,
+                    list = response.categories,
                     loading = false,
                     error = null
                 )
